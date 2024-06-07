@@ -10,32 +10,42 @@ class Stack:
         
         
     def pop(self):
-        if  self.isEmpty:
+        if  self.isEmpty():
+            return None
+        else:
             item =  self.stack.pop(self.top)
             self.top = self.top -1 
             return item
-        else:
-            return None
     def peek(self):
-        if self.isEmpty: 
+        if self.isEmpty(): 
+            return None
+        else:
             item =  self.stack[self.top]
             return item
-        else:
-            return None
     def isEmpty(self):
-        if self.top >= 0:
-            return False
-        else:
+        # if self.top >= 0:
+        #     return False
+        # else:
+        #     return True
+        if self.top == -1:
             return True
+        else :
+            return False    
     def size(self):
         return self.top + 1 
+    
     def get_max(self):
-        
-        max = self.stack[self.top]
-        for i in range(self.top +1):
-            if self.stack[i] > max :
-                max = self.stack[i]
-        return max
+
+        if self.isEmpty():
+            return None
+
+        else: 
+            max = self.stack[self.top]
+            for i in range(self.top +1):
+                if self.stack[i] > max :
+                    max = self.stack[i]
+            return max
+           
        
 
 
