@@ -54,11 +54,11 @@ class Stack:
 
 #example:
 
-stack = Stack()
-stack.push(100)
-stack.push(10)
-stack.push(20)
-print(stack.get_max()) # output: 100
-print(stack.peek()) # Output: 20
-print(stack.pop()) # Output: 20
-print(stack.isEmpty()) # Output: False
+# stack = Stack()
+# stack.push(100)
+# stack.push(10)
+# stack.push(20)
+# print(stack.get_max()) # output: 100
+# print(stack.peek()) # Output: 20
+# print(stack.pop()) # Output: 20
+# print(stack.isEmpty()) # Output: False
